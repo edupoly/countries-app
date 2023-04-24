@@ -20,7 +20,7 @@ const Countries = () => {
         setFilterRegion("All");
         setLoad(false);
       });
-  }, []);
+  }, [filterLength]);
   React.useEffect(() => {
     filterByRegion();
   }, [filterRegion]);
