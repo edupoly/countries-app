@@ -11,6 +11,7 @@ const Countries = () => {
   const [currentFilter, setCurrentFilter] = React.useState([]);
   const [filterLength, setFilterLength] = React.useState([]);
   React.useEffect(() => {
+    console.log(filterLength);
     setLoad(true);
     fetch("https://restcountries.com/v2/all")
       .then((res) => res.json())
